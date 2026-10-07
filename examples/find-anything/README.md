@@ -48,6 +48,30 @@ pixi run python find_anything.py --source /path/to/video.mp4 --prompt "dog, ball
 For a machine without a desktop session, add `--no-viewer` to write
 `.cache/find_anything.rrd` instead, and `--max-frames 300` to bound a stream.
 
+## GPU transport between processes
+
+On Lyrical, Isaac ROS 5.0 publishes images and tensors as `rosidl::Buffer` fields, and the
+environment includes the CUDA buffer backend. A subscriber in another process that accepts
+CUDA receives them in GPU memory; an ordinary subscriber receives a host copy of the same
+message. The backend is negotiated per subscription, so both work at once.
+
+While `pixi run webcam` (or a video with `--source`) runs, check it from a second terminal:
+
+```bash
+pixi run transport          # both kinds of subscriber, side by side
+pixi run transport cuda     # only a subscriber that accepts CUDA
+pixi run transport cpu      # only an ordinary subscriber
+```
+
+```text
+/resize/image, received in this process over 10 s:
+  subscriber accepting CUDA  122 x cuda (1.6 MB each)
+  ordinary subscriber        120 x cpu (1.6 MB each)
+```
+
+`cuda` means the subscriber got a handle to the publisher's GPU memory instead of a copy.
+The nodes inside the demo's own container exchange messages directly either way.
+
 ## First run
 
 The first run downloads NVIDIA's Grounding DINO Swin-Tiny model (722 MB, checksum-pinned)

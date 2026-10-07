@@ -31,6 +31,11 @@ ros-lyrical-isaac-ros-grounding-dino-interfaces = "5.0.*"
 ros-lyrical-isaac-ros-image-proc = "5.0.*"
 ros-lyrical-isaac-ros-tensor-proc = "5.0.*"
 ros-lyrical-isaac-ros-tensor-rt = "5.0.*"
+# Lyrical's CUDA transport for rosidl::Buffer fields: a GPU image or tensor stays in GPU
+# memory when it reaches a subscriber in another process that accepts CUDA, instead of being
+# copied to the host. Isaac ROS nodes accept any installed backend but do not depend on one,
+# so it is listed here. `pixi run transport` shows it in use.
+ros-lyrical-cuda-buffer-backend = "*"
 
 # `pixi run -e jazzy ...`: ROS 2 Jazzy with Isaac ROS 4.6, NVIDIA's last Jazzy release.
 [environments.jazzy]
@@ -60,3 +65,11 @@ cmd = "python find_anything.py"
 [tasks.webcam]
 description = "Find whatever you type in your webcam feed, live in Rerun"
 cmd = "python find_anything.py --source 0"
+
+[tasks.transport]
+description = "While a demo runs: receive a GPU topic in another process and show its buffer backend"
+cmd = "python transport_check.py --backend {{ backend }} {{ topic }}"
+args = [
+  { arg = "backend", default = "both", choices = ["both", "cuda", "cpu"] },
+  { arg = "topic", default = "/resize/image" },
+]

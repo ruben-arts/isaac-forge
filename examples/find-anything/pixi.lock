@@ -436,6 +436,7 @@ environments:
       - conda: https://prefix.dev/conda-forge/noarch/tzdata-2026c-h151e31d_0.conda
       - conda: https://prefix.dev/conda-forge/noarch/widgetsnbextension-4.0.16-pyhd8ed1ab_0.conda
       - conda: https://prefix.dev/isaac-forge/lyrical/linux-aarch64/ros-lyrical-cuda-buffer-0.1.2-hbd7b768_0.conda
+      - conda: https://prefix.dev/isaac-forge/lyrical/linux-aarch64/ros-lyrical-cuda-buffer-backend-0.1.2-hbd7b768_0.conda
       - conda: https://prefix.dev/isaac-forge/lyrical/linux-aarch64/ros-lyrical-cuda-buffer-backend-msgs-0.1.2-hd5040fa_0.conda
       - conda: https://prefix.dev/isaac-forge/lyrical/linux-aarch64/ros-lyrical-cvcuda-conversions-5.0.0-hbd7b768_0.conda
       - conda: https://prefix.dev/isaac-forge/lyrical/linux-aarch64/ros-lyrical-isaac-ros-common-5.0.0-py314h8ff800d_0.conda
@@ -457,13 +458,18 @@ environments:
       - conda: https://prefix.dev/robostack-lyrical/linux-aarch64/ros-lyrical-launch-3.9.8-he8cfe8b_27.conda
       - conda: https://prefix.dev/robostack-lyrical/linux-aarch64/ros-lyrical-launch-ros-0.29.9-he8cfe8b_27.conda
       - conda: https://prefix.dev/robostack-lyrical/linux-aarch64/ros-lyrical-message-filters-7.4.2-he8cfe8b_27.conda
+      - conda: https://prefix.dev/robostack-lyrical/linux-aarch64/ros-lyrical-pluginlib-5.8.5-he8cfe8b_27.conda
       - conda: https://prefix.dev/robostack-lyrical/linux-aarch64/ros-lyrical-rclcpp-32.0.3-he8cfe8b_27.conda
       - conda: https://prefix.dev/robostack-lyrical/linux-aarch64/ros-lyrical-rclcpp-components-32.0.3-he8cfe8b_27.conda
       - conda: https://prefix.dev/robostack-lyrical/linux-aarch64/ros-lyrical-rcutils-7.1.3-he8cfe8b_27.conda
       - conda: https://prefix.dev/robostack-lyrical/linux-aarch64/ros-lyrical-rmw-7.10.2-he8cfe8b_27.conda
       - conda: https://prefix.dev/robostack-lyrical/linux-aarch64/ros-lyrical-ros-base-0.13.0-he8cfe8b_27.conda
       - conda: https://prefix.dev/robostack-lyrical/linux-aarch64/ros-lyrical-rosidl-buffer-5.2.1-he8cfe8b_27.conda
+      - conda: https://prefix.dev/robostack-lyrical/linux-aarch64/ros-lyrical-rosidl-buffer-backend-5.2.1-he8cfe8b_27.conda
+      - conda: https://prefix.dev/robostack-lyrical/linux-aarch64/ros-lyrical-rosidl-buffer-backend-registry-5.2.1-he8cfe8b_27.conda
       - conda: https://prefix.dev/robostack-lyrical/linux-aarch64/ros-lyrical-rosidl-default-runtime-1.8.1-he8cfe8b_27.conda
+      - conda: https://prefix.dev/robostack-lyrical/linux-aarch64/ros-lyrical-rosidl-runtime-cpp-5.2.1-he8cfe8b_27.conda
+      - conda: https://prefix.dev/robostack-lyrical/linux-aarch64/ros-lyrical-rosidl-typesupport-cpp-3.4.2-he8cfe8b_27.conda
       - conda: https://prefix.dev/robostack-lyrical/linux-aarch64/ros-lyrical-sensor-msgs-5.9.3-he8cfe8b_27.conda
       - conda: https://prefix.dev/robostack-lyrical/linux-aarch64/ros-lyrical-std-msgs-5.9.3-he8cfe8b_27.conda
       - conda: https://prefix.dev/robostack-lyrical/linux-aarch64/ros-lyrical-vision-msgs-4.2.0-he8cfe8b_27.conda
@@ -1115,6 +1121,7 @@ environments:
       - conda: https://prefix.dev/conda-forge/noarch/wayland-protocols-1.49-hd8ed1ab_0.conda
       - conda: https://prefix.dev/conda-forge/noarch/widgetsnbextension-4.0.16-pyhd8ed1ab_0.conda
       - conda: https://prefix.dev/isaac-forge/lyrical/linux-64/ros-lyrical-cuda-buffer-0.1.2-hde07269_0.conda
+      - conda: https://prefix.dev/isaac-forge/lyrical/linux-64/ros-lyrical-cuda-buffer-backend-0.1.2-hde07269_0.conda
       - conda: https://prefix.dev/isaac-forge/lyrical/linux-64/ros-lyrical-cuda-buffer-backend-msgs-0.1.2-hdf03675_0.conda
       - conda: https://prefix.dev/isaac-forge/lyrical/linux-64/ros-lyrical-cvcuda-conversions-5.0.0-hde07269_0.conda
       - conda: https://prefix.dev/isaac-forge/lyrical/linux-64/ros-lyrical-isaac-ros-common-5.0.0-py314h9e50447_0.conda
@@ -1136,13 +1143,18 @@ environments:
       - conda: https://prefix.dev/robostack-lyrical/linux-64/ros-lyrical-launch-3.9.8-hb0f4dca_27.conda
       - conda: https://prefix.dev/robostack-lyrical/linux-64/ros-lyrical-launch-ros-0.29.9-hb0f4dca_27.conda
       - conda: https://prefix.dev/robostack-lyrical/linux-64/ros-lyrical-message-filters-7.4.2-hb0f4dca_27.conda
+      - conda: https://prefix.dev/robostack-lyrical/linux-64/ros-lyrical-pluginlib-5.8.5-hb0f4dca_27.conda
       - conda: https://prefix.dev/robostack-lyrical/linux-64/ros-lyrical-rclcpp-32.0.3-hb0f4dca_27.conda
       - conda: https://prefix.dev/robostack-lyrical/linux-64/ros-lyrical-rclcpp-components-32.0.3-hb0f4dca_27.conda
       - conda: https://prefix.dev/robostack-lyrical/linux-64/ros-lyrical-rcutils-7.1.3-hb0f4dca_27.conda
       - conda: https://prefix.dev/robostack-lyrical/linux-64/ros-lyrical-rmw-7.10.2-hb0f4dca_27.conda
       - conda: https://prefix.dev/robostack-lyrical/linux-64/ros-lyrical-ros-base-0.13.0-hb0f4dca_27.conda
       - conda: https://prefix.dev/robostack-lyrical/linux-64/ros-lyrical-rosidl-buffer-5.2.1-hb0f4dca_27.conda
+      - conda: https://prefix.dev/robostack-lyrical/linux-64/ros-lyrical-rosidl-buffer-backend-5.2.1-hb0f4dca_27.conda
+      - conda: https://prefix.dev/robostack-lyrical/linux-64/ros-lyrical-rosidl-buffer-backend-registry-5.2.1-hb0f4dca_27.conda
       - conda: https://prefix.dev/robostack-lyrical/linux-64/ros-lyrical-rosidl-default-runtime-1.8.1-hb0f4dca_27.conda
+      - conda: https://prefix.dev/robostack-lyrical/linux-64/ros-lyrical-rosidl-runtime-cpp-5.2.1-hb0f4dca_27.conda
+      - conda: https://prefix.dev/robostack-lyrical/linux-64/ros-lyrical-rosidl-typesupport-cpp-3.4.2-hb0f4dca_27.conda
       - conda: https://prefix.dev/robostack-lyrical/linux-64/ros-lyrical-sensor-msgs-5.9.3-hb0f4dca_27.conda
       - conda: https://prefix.dev/robostack-lyrical/linux-64/ros-lyrical-std-msgs-5.9.3-hb0f4dca_27.conda
       - conda: https://prefix.dev/robostack-lyrical/linux-64/ros-lyrical-vision-msgs-4.2.0-hb0f4dca_27.conda
@@ -15974,6 +15986,29 @@ packages:
   run_exports: {}
   size: 91886
   timestamp: 1791287168540
+- conda: https://prefix.dev/isaac-forge/lyrical/linux-64/ros-lyrical-cuda-buffer-backend-0.1.2-hde07269_0.conda
+  sha256: 71d2d070c79bac1d5dcfc97e50c121c8aa6d3390933d6939b98d80e50a155a84
+  md5: 4e829e2446390b16af6d8ff1be5a1809
+  depends:
+  - __glibc >=2.38
+  - ros-lyrical-cuda-buffer
+  - ros-lyrical-cuda-buffer-backend-msgs
+  - ros-lyrical-pluginlib
+  - ros-lyrical-rcutils
+  - ros-lyrical-rosidl-buffer-backend
+  - ros-lyrical-rosidl-buffer-backend-registry
+  - ros-lyrical-rosidl-runtime-cpp
+  - ros-lyrical-rosidl-typesupport-cpp
+  - libgcc >=15
+  - cuda-version >=13.4,<14
+  - libstdcxx >=15
+  - cuda-cudart >=13.4.92,<14.0a0
+  - cuda-nvtx >=13.4.92,<14.0a0
+  - ros2-distro-mutex >=0.21.0,<0.22.0a0
+  license: Apache-2.0
+  run_exports: {}
+  size: 68694
+  timestamp: 1791287168544
 - conda: https://prefix.dev/isaac-forge/lyrical/linux-64/ros-lyrical-cuda-buffer-backend-msgs-0.1.2-hdf03675_0.conda
   sha256: ef27c082b678f91e7a67ea44f2c9369b1cdb6428a351c17b2db9ee307383134a
   md5: 414382131592f667a8f14a9fd7559c74
@@ -16329,6 +16364,30 @@ packages:
   run_exports: {}
   size: 99947
   timestamp: 1791287077974
+- conda: https://prefix.dev/isaac-forge/lyrical/linux-aarch64/ros-lyrical-cuda-buffer-backend-0.1.2-hbd7b768_0.conda
+  sha256: c9ee090ade94f104642c66884d96a5c6e7c5799c0a94421346793bbd790fb85a
+  md5: 8083cb22acb50763cd0b2fd479d5c1a9
+  depends:
+  - __glibc >=2.38
+  - ros-lyrical-cuda-buffer
+  - ros-lyrical-cuda-buffer-backend-msgs
+  - ros-lyrical-pluginlib
+  - ros-lyrical-rcutils
+  - ros-lyrical-rosidl-buffer-backend
+  - ros-lyrical-rosidl-buffer-backend-registry
+  - ros-lyrical-rosidl-runtime-cpp
+  - ros-lyrical-rosidl-typesupport-cpp
+  - libstdcxx >=15
+  - libgcc >=15
+  - cuda-version >=13.4,<14
+  - arm-variant * sbsa
+  - cuda-cudart >=13.4.92,<14.0a0
+  - cuda-nvtx >=13.4.92,<14.0a0
+  - ros2-distro-mutex >=0.21.0,<0.22.0a0
+  license: Apache-2.0
+  run_exports: {}
+  size: 72530
+  timestamp: 1791287077977
 - conda: https://prefix.dev/isaac-forge/lyrical/linux-aarch64/ros-lyrical-cuda-buffer-backend-msgs-0.1.2-hd5040fa_0.conda
   sha256: 28e4d025965970f7144999d1bbddad0d73e285eb55968f7faf25f88fef5c8697
   md5: 5186f75056d6e56722bb1678a623ff7a
@@ -30423,6 +30482,14 @@ packages:
   run_exports: {}
   size: 2058
   timestamp: 1790948324984
+- conda: https://prefix.dev/robostack-lyrical/linux-64/ros-lyrical-pluginlib-5.8.5-hb0f4dca_27.conda
+  sha256: 393db3ba4017b1f218cc126306bf588d67c25e498509fda1a71394f0c984793a
+  md5: 5f000c83106e2f989314b449b74d9d4b
+  depends:
+  - ros2-pluginlib ==5.8.5
+  run_exports: {}
+  size: 2031
+  timestamp: 1790813420389
 - conda: https://prefix.dev/robostack-lyrical/linux-64/ros-lyrical-rclcpp-32.0.3-hb0f4dca_27.conda
   sha256: 9f289811a35e93df8ac606a95d8eb24bd9fa78632084092d2b70c255a9957d4c
   md5: ba04dee771dc855e66e2d1fd2012bede
@@ -30471,6 +30538,22 @@ packages:
   run_exports: {}
   size: 2048
   timestamp: 1790812233428
+- conda: https://prefix.dev/robostack-lyrical/linux-64/ros-lyrical-rosidl-buffer-backend-5.2.1-hb0f4dca_27.conda
+  sha256: 123052762339cffa03543e599a94a7c60ddb8cad0deb13952957a4312556c92d
+  md5: 704d34f15e07d6d32af6be7d01f35611
+  depends:
+  - ros2-rosidl-buffer-backend ==5.2.1
+  run_exports: {}
+  size: 2084
+  timestamp: 1790813817907
+- conda: https://prefix.dev/robostack-lyrical/linux-64/ros-lyrical-rosidl-buffer-backend-registry-5.2.1-hb0f4dca_27.conda
+  sha256: 2dd7979cf8f2ec4122e58fc56de2fe733bc99f3ae3f8630dc0fda44b382fab8d
+  md5: f1b84925b50d32bad98db1af9c2f3411
+  depends:
+  - ros2-rosidl-buffer-backend-registry ==5.2.1
+  run_exports: {}
+  size: 2121
+  timestamp: 1790814111934
 - conda: https://prefix.dev/robostack-lyrical/linux-64/ros-lyrical-rosidl-default-runtime-1.8.1-hb0f4dca_27.conda
   sha256: e9c2ed9d68899273c2307fc5354c5a641ef1b764ac582db9a7192a36a57c716e
   md5: e3aa0d3548c4b3ba5e367a71f2ba35aa
@@ -30479,6 +30562,22 @@ packages:
   run_exports: {}
   size: 2086
   timestamp: 1790814901364
+- conda: https://prefix.dev/robostack-lyrical/linux-64/ros-lyrical-rosidl-runtime-cpp-5.2.1-hb0f4dca_27.conda
+  sha256: fea93c84e94d583334d1c0e68f23411478681d70302150eaf69ef2ad9991c71c
+  md5: e72c02211b8c1a516c17c24b5addc113
+  depends:
+  - ros2-rosidl-runtime-cpp ==5.2.1
+  run_exports: {}
+  size: 2073
+  timestamp: 1790813093241
+- conda: https://prefix.dev/robostack-lyrical/linux-64/ros-lyrical-rosidl-typesupport-cpp-3.4.2-hb0f4dca_27.conda
+  sha256: 2313ef401a1c8297e5109654f8cdc2c7c8dca74d3c6a04887f6c812e210b1448
+  md5: cdc99373696f999bb0b1ecaf5f9b85e8
+  depends:
+  - ros2-rosidl-typesupport-cpp ==3.4.2
+  run_exports: {}
+  size: 2088
+  timestamp: 1790814423775
 - conda: https://prefix.dev/robostack-lyrical/linux-64/ros-lyrical-sensor-msgs-5.9.3-hb0f4dca_27.conda
   sha256: b48944721dcb67a2a08954335ab694057117b83db4e016f10d761413e503a16b
   md5: 65000887f30643709b86f1913e477509
@@ -35155,6 +35254,14 @@ packages:
   run_exports: {}
   size: 2056
   timestamp: 1790904028734
+- conda: https://prefix.dev/robostack-lyrical/linux-aarch64/ros-lyrical-pluginlib-5.8.5-he8cfe8b_27.conda
+  sha256: fc88df048c0754b8cc421d25695cfd02a1d105b0d07953efa0842e1345f90999
+  md5: 6ef7acb8e33833986141ff8352487e6e
+  depends:
+  - ros2-pluginlib ==5.8.5
+  run_exports: {}
+  size: 2033
+  timestamp: 1790783742620
 - conda: https://prefix.dev/robostack-lyrical/linux-aarch64/ros-lyrical-rclcpp-32.0.3-he8cfe8b_27.conda
   sha256: 2a8a7212dfd48d3fc9e2b7425bd4f44dc79e9833f5f6f834e27be2697ae1859a
   md5: 101b1d469cf7d2b6d4c477cc39aaf81e
@@ -35203,6 +35310,22 @@ packages:
   run_exports: {}
   size: 2050
   timestamp: 1790782746763
+- conda: https://prefix.dev/robostack-lyrical/linux-aarch64/ros-lyrical-rosidl-buffer-backend-5.2.1-he8cfe8b_27.conda
+  sha256: 28f4ace86c1a642ad8ee3e86cb4416913613358b58e89b96caaeea8490c2b122
+  md5: 6a552a546896c3fa1a38cc5f15747277
+  depends:
+  - ros2-rosidl-buffer-backend ==5.2.1
+  run_exports: {}
+  size: 2089
+  timestamp: 1790783943944
+- conda: https://prefix.dev/robostack-lyrical/linux-aarch64/ros-lyrical-rosidl-buffer-backend-registry-5.2.1-he8cfe8b_27.conda
+  sha256: acf89125cf63764030076cf07ce7dcfdddab29328239909695f7a32d566c7e9d
+  md5: d3a89e7e7db925f6cd1dd0ed8c77f63e
+  depends:
+  - ros2-rosidl-buffer-backend-registry ==5.2.1
+  run_exports: {}
+  size: 2120
+  timestamp: 1790784104784
 - conda: https://prefix.dev/robostack-lyrical/linux-aarch64/ros-lyrical-rosidl-default-runtime-1.8.1-he8cfe8b_27.conda
   sha256: 0be8bacc847f98151085b5468a780f058c54e2020448ca44d3db461bf8ca5103
   md5: 4a8cfffb1eb6be61b6fe24c362ce8ec3
@@ -35211,6 +35334,22 @@ packages:
   run_exports: {}
   size: 2091
   timestamp: 1790809515344
+- conda: https://prefix.dev/robostack-lyrical/linux-aarch64/ros-lyrical-rosidl-runtime-cpp-5.2.1-he8cfe8b_27.conda
+  sha256: 7a6a689f545ebba1eef6225395ee2e7efbee95b2fdef02bf13af3057a06284d7
+  md5: 33295b4c6db9628d48053a1827142ac4
+  depends:
+  - ros2-rosidl-runtime-cpp ==5.2.1
+  run_exports: {}
+  size: 2070
+  timestamp: 1790783496151
+- conda: https://prefix.dev/robostack-lyrical/linux-aarch64/ros-lyrical-rosidl-typesupport-cpp-3.4.2-he8cfe8b_27.conda
+  sha256: 89b631e8afee31aa485d538ea4dcd9d8d1dd8f2aa6c43dfeef7de0bdae2b0447
+  md5: 6cdce1bd653bb88a973ea9bf9a877a4c
+  depends:
+  - ros2-rosidl-typesupport-cpp ==3.4.2
+  run_exports: {}
+  size: 2087
+  timestamp: 1790809160090
 - conda: https://prefix.dev/robostack-lyrical/linux-aarch64/ros-lyrical-sensor-msgs-5.9.3-he8cfe8b_27.conda
   sha256: 5a5ff79b6c537d1ded5c30f34b9fa5236dd1358eb6fe2d13e7940e0120ae25c6
   md5: d452bbe391210b2a6f3552345026ba25

@@ -62,6 +62,30 @@ pixi run video --source rtsp://camera.example/stream
 For headless processing, add `--no-viewer`; this writes
 `.cache/yolov8_video.rrd`. Use `--max-frames 300` to bound a recording.
 
+## GPU transport between processes
+
+On Lyrical, Isaac ROS 5.0 publishes images and tensors as `rosidl::Buffer` fields, and the
+environment includes the CUDA buffer backend. A subscriber in another process that accepts
+CUDA receives them in GPU memory; an ordinary subscriber receives a host copy of the same
+message. The backend is negotiated per subscription, so both work at once.
+
+While `pixi run video` runs, check it from a second terminal:
+
+```bash
+pixi run transport          # both kinds of subscriber, side by side
+pixi run transport cuda     # only a subscriber that accepts CUDA
+pixi run transport cpu      # only an ordinary subscriber
+```
+
+```text
+/yolov8_encoder/resize/image, received in this process over 10 s:
+  subscriber accepting CUDA  902 x cuda (0.3 MB each)
+  ordinary subscriber        946 x cpu (0.3 MB each)
+```
+
+`cuda` means the subscriber got a handle to the publisher's GPU memory instead of a copy.
+The nodes inside the demo's own container exchange messages directly either way.
+
 An NVIDIA GPU and working driver are required. Close other GPU-heavy applications while
 TensorRT builds the engine on a low-memory Jetson. The downloaded model carries the
 Ultralytics AGPL-3.0 license; its URL and SHA-256 are pinned in
